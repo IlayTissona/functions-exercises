@@ -5,23 +5,28 @@ function myReverse(str) {
 	for (let i = str.length - 1; i >= 0; i--) {
 		out += str[i];
 	}
-
 	return out;
 }
 
 //Question 2
 function allCombinations(str) {
 	let combinations = [];
-	// your code here
-
-	//
+	let temp = "";
+	for (let i = 0; i < str.length; i++) {
+		temp = "";
+		for (let j = i; j < str.length; j++) {
+			temp += str[j];
+			combinations.push(temp);
+		}
+	}
 	return combinations;
 }
 
 //Question 3
 function allCaps(str) {
 	// your code here
-	return "";
+
+	return out;
 }
 
 //Question 4
@@ -44,7 +49,7 @@ function isPrefectNumber(num) {
 
 // *** Playground ***
 // Feel free to run and test your code here on your own
-console.log(myReverse(345678));
+console.log(allCombinations("ilay"));
 
 // *** End of Playground ***
 
