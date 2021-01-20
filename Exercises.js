@@ -48,19 +48,35 @@ function myPower(x, n) {
 
 //Question 5
 function getFirstNotRepeating(str) {
-	// your code here
-	return "";
+	let exist = true;
+	for (let i = 0; i < str.length; i++) {
+		exist = true;
+		for (let j = 0; j < str.length; j++) {
+			if (str[i] === str[j] && i !== j) {
+				exist = false;
+			}
+		}
+		if (exist) {
+			return str[i];
+		}
+	}
+	return "Not Found";
 }
 
 //Question 6 (Bonus)
 function isPrefectNumber(num) {
-	// your code here
-	return "I'm not interested in the bonus question :(";
+	let sum = 0;
+	for (let i = 1; i < num; i++) {
+		if (num % i === 0) {
+			sum += i;
+		}
+	}
+	return num === sum;
 }
 
 // *** Playground ***
 // Feel free to run and test your code here on your own
-console.log(myPower(2));
+console.log(isPrefectNumber());
 
 // *** End of Playground ***
 
