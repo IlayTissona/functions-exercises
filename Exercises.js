@@ -39,8 +39,11 @@ function allCaps(str) {
 
 //Question 4
 function myPower(x, n) {
-	// your code here
-	return "";
+	let ans = 1;
+	for (let i = 0; i < n; i++) {
+		ans *= x;
+	}
+	return ans;
 }
 
 //Question 5
@@ -57,7 +60,7 @@ function isPrefectNumber(num) {
 
 // *** Playground ***
 // Feel free to run and test your code here on your own
-console.log(allCombinations("ilay"));
+console.log(myPower(2));
 
 // *** End of Playground ***
 
