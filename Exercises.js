@@ -26,6 +26,14 @@ function allCombinations(str) {
 function allCaps(str) {
 	// your code here
 
+	let out = str[0].toUpperCase();
+	for (let i = 1; i < str.length; i++) {
+		if (str[i - 1] === " ") {
+			out += str[i].toUpperCase();
+		} else {
+			out += str[i];
+		}
+	}
 	return out;
 }
 
