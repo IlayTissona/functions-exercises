@@ -1,44 +1,50 @@
 //Question 1
 function myReverse(str) {
-  // your code here
-  return "";
+	let out = "";
+	str = str.toString(10);
+	for (let i = str.length - 1; i >= 0; i--) {
+		out += str[i];
+	}
+
+	return out;
 }
 
 //Question 2
 function allCombinations(str) {
-  let combinations = [];
-  // your code here
+	let combinations = [];
+	// your code here
 
-  //
-  return combinations;
+	//
+	return combinations;
 }
 
 //Question 3
 function allCaps(str) {
-  // your code here
-  return "";
+	// your code here
+	return "";
 }
 
 //Question 4
 function myPower(x, n) {
-  // your code here
-  return "";
+	// your code here
+	return "";
 }
 
 //Question 5
 function getFirstNotRepeating(str) {
-  // your code here
-  return "";
+	// your code here
+	return "";
 }
 
 //Question 6 (Bonus)
 function isPrefectNumber(num) {
-  // your code here
-  return "I'm not interested in the bonus question :(";
+	// your code here
+	return "I'm not interested in the bonus question :(";
 }
 
 // *** Playground ***
 // Feel free to run and test your code here on your own
+console.log(myReverse(345678));
 
 // *** End of Playground ***
 
