@@ -76,7 +76,7 @@ function isPrefectNumber(num) {
 
 // *** Playground ***
 // Feel free to run and test your code here on your own
-console.log(isPrefectNumber());
+console.log(allCombinations("dog"));
 
 // *** End of Playground ***
 
